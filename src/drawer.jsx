@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import LG from "./assets/logo.png";
 
 const DrawerContainer = styled.div`
   position: fixed;
@@ -7,7 +8,7 @@ const DrawerContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100vh; /* Change to full viewport height */
-  background-color: rgba(16, 36, 71, 0.8);
+  background-color: rgba(16, 36, 71, 0.85);
   color: #fff;
   z-index: 1000;
   display: flex;
@@ -26,7 +27,9 @@ const DrawerContainer = styled.div`
 
 const Content = styled.div`
   text-align: center;
-  margin: 40px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-size: 1.2em;
   flex: 1; /* Allow content to grow and take available space */
 
@@ -44,23 +47,28 @@ const Content = styled.div`
 const ButtonContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px 0;
+  margin-left: 130px;
 `;
 
 const Button = styled.button`
-  font-size: 1.2em;
-  background-color: #fff;
-  color: #102447;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 1em;
+  background-color: rgba(16, 36, 71, 0);
+  color: #fff;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  padding:  5px 20px;
+  border-radius: 60px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: border-color 0.3s ease;
 
   &:hover {
-    background-color: #47bfbf;
+    border-color: #388d8d;
+    border-style: solid;
     color: #fff;
+    background-color: #47bfbf;
   }
 
   @media (max-width: 768px) {
@@ -97,7 +105,7 @@ const Drawer = ({ isOpen, onClose, content }) => {
         <p>{content}</p>
       </Content>
       <ButtonContainer>
-        <Button onClick={onClose}>Know More</Button>
+        <Button onClick={onClose}>Back</Button>
       </ButtonContainer>
     </DrawerContainer>
   );

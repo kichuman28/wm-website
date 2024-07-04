@@ -18,7 +18,6 @@ body {
 
 .c-file-input {
     display: none;
-    /* Hide the default file input */
 }
 
 .c-file-label {
@@ -34,7 +33,6 @@ body {
     cursor: pointer;
     text-align: center;
     background-color: white;
-    /* Match other input fields */
     color: #333;
 }
 
@@ -109,6 +107,31 @@ body {
     display: flex;
     width: 100%;
     margin-bottom: 25px;
+}
+
+.c-form-field-row-firstname {
+    margin-right: 20px;
+    width: 50%;
+}
+
+.c-form-field-row-secondname {
+    margin-right: 0px;
+    width: 50%;
+}
+
+.c-form-field-row-email {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.c-form-field-row-1-4 {
+    margin-right: 20px;
+    width: 25%;
+}
+
+.c-form-field-row-3-4 {
+    margin-bottom: 0px;
+    width: 75%;
 }
 
 .c-input-field {
@@ -463,6 +486,7 @@ body {
 
     .c-paragraph {
         font-size: 16px;
+        text-align: justify;
     }
 
     .c-form {
@@ -556,10 +580,49 @@ body {
 
     .c-paragraph {
         font-size: 14px;
+        text-align: left;
+    }
+
+    .c-input-field-3-4{
+        width: 100%;
+    }
+
+    .c-input-field-1-4{
+        width: 100%;
     }
 
     .c-form {
         width: 100%;
+        padding: 20px 30px;
+    }
+
+    .c-form-field-row {
+        display: grid;
+        margin-bottom: 0px;
+    }
+    .c-form-field-row-firstname {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .c-form-field-row-secondname {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .c-form-field-row-email {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .c-form-field-row-1-4 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .c-form-field-row-3-4 {
+        width: 100%;
+        margin-bottom: 15px;
     }
 
     .m-content {
@@ -598,4 +661,4 @@ body {
     .m-button-container {
         margin-top: 40px;
     }
-}                   
+}
